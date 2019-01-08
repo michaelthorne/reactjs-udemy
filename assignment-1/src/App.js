@@ -17,14 +17,6 @@ class App extends Component {
   }
 
   render () {
-    const style = {
-      'border': '1px solid #ccc',
-      'borderRadius': '4px',
-      'margin': '8px auto',
-      'maxWidth': '240px',
-      'padding': '2px'
-    }
-
     return (
       <div className="App">
         <h1>Assignment 1</h1>
@@ -34,14 +26,11 @@ class App extends Component {
           current={this.state.username}/>
 
         <UserOutput
-          username={this.state.username}
-          style={style}/>
+          username={this.state.username}/>
         <UserOutput
-          username={this.state.username}
-          style={style}/>
+          username={this.state.username}/>
         <UserOutput
-          username="Static robot"
-          style={style}/>
+          username="Static robot"/>
       </div>
     )
   }
