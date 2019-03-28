@@ -7,7 +7,7 @@ import axios from 'axios'
 
 axios.defaults.baseURL = 'https://jsonplaceholder.typicode.com'
 axios.defaults.headers.common['Authorization'] = 'AUTH TOKEN'
-axios.defaults.headers.post['Content-Type'] = 'application/json' // This is the default and not needed
+axios.defaults.headers.post['Content-Type'] = 'application/json' // This is the default and is not necessary
 
 axios.interceptors.request.use(request => {
   console.log(request)
