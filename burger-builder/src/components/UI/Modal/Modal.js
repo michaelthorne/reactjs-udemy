@@ -11,8 +11,8 @@ class Modal extends Component {
   }
 
   shouldComponentUpdate (nextProps, nextState, nextContext) {
-    // Only render the order summary if the modal is shown
-    return nextProps.show !== this.props.show
+    // Only render the order summary if the modal is shown or the children have changed
+    return nextProps.show !== this.props.show || nextProps.children !== this.props.children
   }
 
   render () {
