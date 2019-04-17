@@ -20,9 +20,10 @@ class NewPost extends Component {
       body: this.state.content,
       author: this.state.author
     }
-    axios.post(data)
+    axios.post('/posts', data)
       .then(response => {
         console.log(response)
+        this.props.history.push('/posts')
       })
   }
 
